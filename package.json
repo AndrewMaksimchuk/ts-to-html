@@ -1,0 +1,30 @@
+{
+	"name": "tstohtml",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/tstohtml.js",
+	"module": "./dist/tstohtml.js",
+	"exports": {
+		".": {
+			"import": "./dist/tstohtml.js"
+		}
+	},
+	"engines": {
+		"node": "22.13.0"
+	},
+	"scripts": {
+		"build": "tsc && vite build",
+		"test": "vitest",
+		"test:coverage": "vitest run --coverage",
+		"test:view": "vite preview --outDir ./coverage"
+	},
+	"devDependencies": {
+		"@types/node": "22.13.0",
+		"@vitest/coverage-v8": "^4.1.1",
+		"typescript": "~5.9.3",
+		"vite": "^8.0.1",
+		"vitest": "^4.1.1"
+	}
+}
